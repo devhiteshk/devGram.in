@@ -3,10 +3,8 @@ name: Greetings
 on:
   pull_request_target:
     types: [opened]
-
   issues:
     types: [opened]
-
 
 permissions:
   contents: read
@@ -14,9 +12,8 @@ permissions:
   pull-requests: write
 
 jobs:
-  Greetings:
+  greeting:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/first-interaction@v1
         with:
